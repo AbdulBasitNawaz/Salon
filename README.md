@@ -1,4 +1,4 @@
-# Stylin Beauty Salon 💎
+# Stylin Beauty Salon
 
 > **Note**: This is a high-fidelity **demo project** designed for cold calling outreach and client demonstrations. It is used to showcase modern design layouts, premium aesthetics, and interactive features to prospective salon businesses.
 
