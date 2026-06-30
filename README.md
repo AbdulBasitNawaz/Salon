@@ -1,14 +1,16 @@
-# Stylin Beauty Salon
+<h1 align="center">Stylin Beauty Salon </h1>
 
-> **Note**: This is a high-fidelity **demo project** designed for cold calling outreach and client demonstrations. It is used to showcase modern design layouts, premium aesthetics, and interactive features to prospective salon businesses.
+<p align="center">
+  <strong>Note</strong>: This is a high-fidelity <strong>demo project</strong> designed for cold calling outreach and client demonstrations. It is used to showcase modern design layouts, premium aesthetics, and interactive features to prospective salon businesses.
+</p>
 
-A premium, fully responsive, high-end single-page landing page application mockup for **Stylin Beauty Salon**, built using **React** and **Vite**. 
-
-This project showcases clean frontend architecture, custom styling systems, and interactive UI states tailored for a luxury boutique aesthetic.
+<p align="center">
+  A premium, fully responsive, high-end single-page landing page application mockup for <strong>Stylin Beauty Salon</strong>, built using <strong>React</strong> and <strong>Vite</strong>. This project showcases clean frontend architecture, custom styling systems, and interactive UI states tailored for a luxury boutique aesthetic.
+</p>
 
 ---
 
-## 🎨 Design System & Aesthetic
+<h2 align="center"> Design System & Aesthetic</h2>
 
 The application is styled with a bespoke **"Sober Cream & Champagne Gold"** palette, drawing inspiration from high-end Shopify luxury storefronts:
 
@@ -23,7 +25,7 @@ The application is styled with a bespoke **"Sober Cream & Champagne Gold"** pale
 
 ---
 
-## ✨ Features
+<h2 align="center">✨ Features</h2>
 
 1.  **Centered Hero Banner**: 
     *   Darkened background overlay displaying a high-resolution bridal makeover header image.
@@ -44,7 +46,7 @@ The application is styled with a bespoke **"Sober Cream & Champagne Gold"** pale
 
 ---
 
-## 🛠️ Tech Stack
+<h2 align="center"> Tech Stack</h2>
 
 *   **Core**: React 18+
 *   **Build Tool**: Vite 6+
@@ -53,7 +55,7 @@ The application is styled with a bespoke **"Sober Cream & Champagne Gold"** pale
 
 ---
 
-## 📁 File Structure
+<h2 align="center">📁 File Structure</h2>
 
 ```text
 ├── public/
