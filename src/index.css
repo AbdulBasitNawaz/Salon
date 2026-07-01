@@ -848,9 +848,10 @@ footer {
 }
 
 /* Toast/Notification Confirmation styling */
+/* Toast/Notification Confirmation styling */
 .toast-notification {
   position: fixed;
-  bottom: 30px;
+  bottom: 110px;
   right: 30px;
   background-color: var(--color-bg-dark);
   border: 1px solid var(--color-gold);
@@ -872,6 +873,30 @@ footer {
 .toast-notification-success-icon {
   color: var(--color-gold);
   font-size: 1.4rem;
+}
+
+/* Floating WhatsApp Option styling */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #FFFFFF !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+  z-index: 999;
+  transition: var(--transition-smooth);
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-5px) scale(1.08);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+  background: linear-gradient(135deg, #128C7E, #25D366);
 }
 
 /* Responsive Breakpoints */

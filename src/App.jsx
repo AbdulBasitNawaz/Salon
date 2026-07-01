@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 function App() {
   const [isSticky, setIsSticky] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-  const [toast, setToast] = useState({ active: false, message: '' })
+
 
   const [booking, setBooking] = useState({
     name: '',
@@ -41,19 +41,6 @@ function App() {
   // Handle form submit
   const handleSubmit = (e) => {
     e.preventDefault()
-    
-    const serviceNames = {
-      bridal: 'Bridal & Nikkah Makeovers',
-      party: 'Party & Event Styling',
-      skin_hair: 'Advanced Skin & Hair Care'
-    }
-    const selectedServiceName = serviceNames[booking.service] || 'Selected Styling'
-
-    // Show toast notification
-    setToast({
-      active: true,
-      message: `Thank you, ${booking.name}! Your slot for ${selectedServiceName} is reserved.`
-    })
 
     // Reset Form
     setBooking({
@@ -64,11 +51,6 @@ function App() {
       date: '',
       time: ''
     })
-
-    // Hide toast after 4 seconds
-    setTimeout(() => {
-      setToast({ active: false, message: '' })
-    }, 4000)
   }
 
   return (
@@ -415,14 +397,20 @@ function App() {
         </div>
       </footer>
 
-      {/* Toast Notification element */}
-      <div className={`toast-notification ${toast.active ? 'active' : ''}`}>
-        <span className="toast-notification-success-icon">&#10004;</span>
-        <div>
-          <h4 style={{ fontSize: '0.9rem', letterSpacing: '0.1em', color: '#FFF', textTransform: 'uppercase' }}>Request Received</h4>
-          <p style={{ fontSize: '0.75rem', color: '#A0A0A0', marginTop: '2px' }}>{toast.message}</p>
-        </div>
-      </div>
+
+
+      {/* Floating WhatsApp Action */}
+      <a 
+        href="https://wa.me/923377778953" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="whatsapp-float"
+        aria-label="Chat on WhatsApp"
+      >
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.501-5.734-1.451L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.967C16.63 2.03 14.162 1.008 11.53 1.008c-5.437 0-9.863 4.371-9.867 9.8-.001 1.73.457 3.418 1.33 4.927L1.93 20.354l4.717-1.2zm11.396-6.195c-.297-.148-1.758-.867-2.03-.967-.273-.099-.471-.148-.669.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.148-.174.198-.298.297-.497.099-.198.05-.371-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
+        </svg>
+      </a>
     </>
   )
 }
